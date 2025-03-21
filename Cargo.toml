@@ -1,6 +1,12 @@
-[package]
-name = "rust-repros"
+[workspace]
+members = [
+    "crates/bindgen-size-overflow",
+]
+resolver = "2"
+
+[workspace.package]
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
+[workspace.dependencies]
+bindgen = "0.71.0"
